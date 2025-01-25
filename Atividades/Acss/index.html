@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+        }
+        header {
+            text-align: center;
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 5px;
+        }
+        .group {
+            margin-bottom: 15px;
+        }
+        .group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .group input, .group textarea, .group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+        .group input[type="radio"] {
+            width: auto;
+        }
+        .group textarea {
+            resize: vertical;
+        }
+        .group .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+        .group .radio-group label {
+            display: flex;
+            align-items: center;
+        }
+        .form-submit {
+            text-align: center;
+        }
+        .form-submit input {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #ff4d4d; 
+            color: #f1f1f1; 
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0; 
+        }
+    </style>
+</head>
+
+<header>
+    <h1>Formulário de contato</h1>
+</header>
+
+<body>
+
+<div class="container">
+    <form>
+        <div class="group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="group">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx">
+        </div>
+        <div class="group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <div class="group">
+            <label>Como prefere o nosso contato?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="contact" value="email"> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Telefone</label>
+                <label><input type="radio" name="contact" value="whatsapp"> WhatsApp</label>
+            </div>
+        </div>
+        <div class="group">
+            <label for="time">Qual horário prefere ser atendido?</label>
+            <select id="time" name="time">
+                <option value="manhã">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Gostaria de receber nossas novidades por email?</label>
+        </div>
+        <div class="form-submit">
+            <input type="submit" value="Enviar formulário">
+        </div>
+    </form>
+</div>
+<footer>Desenvolvido por Matheus Sarretto</footer>
+</body>
+
+</html>

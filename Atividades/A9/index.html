@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>Atividade 9 - Visualizador de propriedade</title>
+</head>
+<body>
+    <div class="controls">
+        <h1>Visualizador de Propriedades CSS</h1>
+
+        <label for="background-color">Cor de fundo:</label>
+        <input type="color" id="background-color" value="#3498db">
+
+        <label for="width">Largura (px):</label>
+        <input type="number" id="width" value="600" min="50" max="600">
+
+        <label for="height">Altura (px):</label>
+        <input type="number" id="height" value="600" min="50" max="600">
+
+        <label for="border-radius">Raio da borda (px):</label>
+        <input type="number" id="border-radius" value="0" min="0" max="100">
+
+    </div>
+    <div class="box" id="box"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
