@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>Atividade 11 - API</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Consulta de Endereço pelo CEP</h2>
+        <form id="cepForm">
+            <label for="cep"><strong>Digite o CEP:</strong></label>
+            <input type="text" id="cep" name="cep" maxlength="9" required>
+            <button type="button" onclick="consultarCep()">Consultar</button>
+        </form>
+
+        <div id="endereco" class="endereco">
+            <h3>Endereço</h3>
+            <label for="uf"><strong>Estado:</strong></label>
+            <input type="text" id="uf" name="uf" disabled>
+
+            <label for="localidade"><strong>Cidade:</strong></label>
+            <input type="text" id="localidade" name="localidade" disabled>
+
+            <label for="bairro"><strong>Bairro:</strong></label>
+            <input type="text" id="bairro" name="bairro" disabled>
+            
+            <label for="logradouro"><strong>Logradouro:</strong></label>
+            <input type="text" id="logradouro" name="logradouro" disabled>
+        </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
